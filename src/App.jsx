@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/huyuloong/waitpage" element={<Wave />} />
         {/* default path */}
-        <Route path="/huyuloong/" element={<Navigate to="/waitpage" />} />
+        <Route path="/huyuloong/" element={<Navigate to="/huyuloong/waitpage" />} />
       </Routes>
     </div>
   );

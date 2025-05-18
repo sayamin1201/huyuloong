@@ -9,7 +9,9 @@ const Wave = () => {
     navigate("/topbar");
   }
   return (
-    <div className = "wavecontainer">
+    <div className='waitpagecontainer'>
+      <a href="#">首页</a>
+      <div className = "wavecontainer">
       <footer>
       <div className="waves">
         <div className="wave" id="wave1"></div>
@@ -55,6 +57,7 @@ const Wave = () => {
       </div>
       <p>©huyulong | huyulong2000@qq.com</p>
     </footer>
+    </div>
     </div>
   );
 };
