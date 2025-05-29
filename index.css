@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app-div {
+    background-image: url(./src/assets/小厨师和小蛋糕.png);
+    background-size: cover;
+    padding: 20px;
+    padding-top: 64px;
+    height: calc(100vh - 104px); /* 应用区域高度减去导航栏高度 */
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1); /* 添加阴影以实现覆盖效果 */
+    position: relative;
+}
