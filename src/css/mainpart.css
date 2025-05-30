@@ -6,6 +6,17 @@
   padding-bottom: 50px;
   flex-direction: column;
 }
+
+.tanChiShe {
+    width: 85%;
+}
+
+.tanChiShe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .gif {
   position: fixed; /* 固定定位 */
   bottom: -120px; /* 距离页面底部的距离 */
