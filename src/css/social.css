@@ -47,3 +47,9 @@
     font-size: 2em;
     color: var(--clr);
 }
+
+@media (max-width: 800px) {
+  .top-bar .social-icon{
+    padding-right: 20px;
+  }
+}

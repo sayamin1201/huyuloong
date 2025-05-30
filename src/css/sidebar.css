@@ -15,16 +15,6 @@
     display: none;
 }
 
-.logo {
-    flex-shrink: 0;
-    width: 90%;
-    position: relative;
-    aspect-ratio: 1/1;
-    margin-top: 50px;
-    background-size: cover;
-    border-radius: 50%;
-}
-
 .left-div {
     flex-shrink: 0;
     width: 100%;
@@ -35,6 +25,99 @@
     -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
     transition: background 0.5s ease;
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 90%;
+    position: relative;
+    aspect-ratio: 1/1;
+    margin-top: 50px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.logo:hover {
+  animation: rotate 3s linear infinite; /* 鼠标悬停时无限循环旋转 */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.welcome {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.index-logo {
+    flex-shrink: 0;
+    width: 40%;
+    margin-top: 30px;
+    position: relative;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.5px solid #ffffff;
+}
+.description {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.gradientText {
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    background-position: 0%;
+    font-family: "title";
+    animation: backgroundSizeAnimation 10s ease-in-out infinite;
+      background-image:  var(--gradient);
+}
+
+@keyframes backgroundSizeAnimation {
+    0% {
+        background-position: 100%;
+    }
+
+    25% {
+        background-position: 50%;
+    }
+
+    50% {
+        background-position: 0%;
+    }
+
+    75% {
+        background-position: 50%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+
+}
+
+.purpleText {
+    color: var(--purple_text_color);
+    font-weight: 800;
+}
+
+.textBackground {
+    font-weight: 800;
+    background: var(--text_bg_color);
+    border-radius: 5px;
+    font-size: 17px;
+    margin: 0 3px;
+    padding: 2px 4px;
 }
 
 .left-des {
@@ -107,4 +190,9 @@
     position: absolute;
     left: -5px;
     top: 50%;
+}
+@media (max-width: 800px) {
+  .side-left{
+    width: 30%;
+  }
 }

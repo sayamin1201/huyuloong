@@ -27,9 +27,10 @@ body {
     background: var(--main_bg_color);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     background-position: center;
     background-attachment: fixed;
-    transition: color 0.5s ease;
+    transition: background 0.5s ease;
     color: var(--main_text_color);
 }
 
@@ -41,8 +42,19 @@ body {
     padding: 20px;
     padding-top: 64px;
     max-width: 1450px;
-    height: calc(100vh - 104px); /* 应用区域高度减去导航栏高度 */
+    height: calc(100vh - 90px); /* 应用区域高度减去导航栏高度 */
     position: relative;
     display: flex;
     flex-direction: row;
+    transition: padding-top 0.5s ease;
+}
+
+@media (max-width: 800px) {
+    html {
+        --main_bg_color: url(./src/assets/芙桃.png);
+    }
+    .app-div {
+        padding-top: 152px;
+        height: calc(100vh - 152px); /* 应用区域高度减去导航栏高度 */
+    }
 }

@@ -68,6 +68,8 @@ html[data-theme="Dark"] {
     width: 100%;
     height: 100%;
     background: var(--back_filter_color);
+    background-repeat: no-repeat;
+    background-size: cover;
     backdrop-filter:  blur(var(--back_filter));
     -webkit-backdrop-filter: blur(var(--back_filter));
     transition: background 0.5s ease;
