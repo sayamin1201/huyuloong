@@ -11,8 +11,8 @@ html {
     --item_left_text_color: #ffffff;
     --footer_text_color: #ffffff;
     --left_tag_item: rgb(27 42 57 / 20%);
-    --card_filter: 0px;
-    --back_filter: 19px;
+    --card_filter: 15px;
+    --back_filter: 0px;
     --back_filter_color: #00000030;
     --fill:#ffffff;
 }
@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    transition: color 0.1s ease;
+    transition: color 0.5s ease;
     color: var(--main_text_color);
 }
 
@@ -45,5 +45,4 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1); /* 添加阴影以实现覆盖效果 */
 }

@@ -34,6 +34,7 @@
     backdrop-filter: blur(var(--card_filter));
     -webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
+    transition: background 0.5s ease;
 }
 
 .left-des {
@@ -57,6 +58,7 @@
     fill:var(--fill);
     font-size: 18px;
     margin-right: 10px;
+    transition: fill 0.5s ease;
 }
 .left-tag {
     display: flex;
